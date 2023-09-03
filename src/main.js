@@ -1,4 +1,8 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import App from "./App.vue";
+import { createApp } from "vue";
 
-createApp(App).mount('#app')
+import VMdEditor from "./markdown";
+
+const app = createApp(App);
+
+app.use(VMdEditor).mount("#app");
